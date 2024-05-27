@@ -1,7 +1,7 @@
 
 resource "aws_security_group" "eks-security-grp" {
   name_prefix = "security-grp-eks"
-  vpc_id      = module.vpc.
+  vpc_id      = module.vpc.vpc_id
 }
 
 resource "aws_security_group_rule" "eks-ingress" {
